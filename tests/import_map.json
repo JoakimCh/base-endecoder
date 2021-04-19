@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "whichever-data": "../node_modules/whichever-data/source/whicheverData.js",
+    "bit-consumer": "../node_modules/bit-consumer/source/bitConsumer.js",
+    "crypto": "node:crypto"
+  }
+}

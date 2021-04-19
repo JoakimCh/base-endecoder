@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "base-endecoder": "^1.0.0"
+  }
+}
