@@ -5,7 +5,7 @@ An [ES module](https://flaviocopes.com/es-modules/) providing functions for conv
 
 But for base64 endecoding your target platform should have a native sollution e.g. the browser's `atob` and `btoa` functions or Node.js's `Buffer.from(bytes).toString('base64')` and `Buffer.from(base64, 'base64')` which will provide much higher performance than these pure JavaScript functions. Especially when working with huge amounts of data, but for shorter strings etc. it doesn't matter much.
 
-Hence I named the pure JavaScript base64 functions `encode_base64_slow` and `decode_base64_slow` to make this pretty clear. But I've also implemented faster versions using `atob` and `btoa` which will work on any platform (note that Node.js must be >= v15.13.0).
+Hence I named the pure JavaScript base64 functions `encode_base64_slow` and `decode_base64_slow` to make this pretty clear. But I've also implemented the faster versions which is using the native base64 functions for each platform.
 
 ### Example
 
